@@ -5,14 +5,10 @@
 //  Created by Youssif Hany on 24/07/2026.
 //
 
-import Foundation
 import SwiftUI
 
-
-@available(macOS 10.15, *)
 public typealias Routable = View & Hashable
 
-@available(macOS 10.15, *)
 public protocol RoutableObject: AnyObject {
 
     associatedtype Destination: Routable
@@ -26,7 +22,6 @@ public protocol RoutableObject: AnyObject {
     func navigateToRoot()
 }
 
-@available(macOS 10.15, *)
 extension RoutableObject {
     
     public func navigate(to destiantion: Destination) {
