@@ -13,4 +13,5 @@ public final class Router<Routes: Routable>: ObservableObject, RoutableObject {
     
     @Published public var stack: [Destination] = []
 
+    public init() {}
 }
